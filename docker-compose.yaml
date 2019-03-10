@@ -1,0 +1,32 @@
+version: '3'
+services:
+  mysqldb:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db_script'
+      MYSQL_USER: 'db_script'
+      MYSQL_PASSWORD: 'db_script'
+      MYSQL_ROOT_PASSWORD: 'db_script'
+    ports:
+      - '9006:3306'
+  cgi:
+    image: hypoport/httpd-cgi
+    ports:
+    - "9080:80"
+    volumes:
+    - ./cgi/get-the-content:/usr/local/apache2/cgi-bin/get-the-content
+  script:
+    build: 
+      context: ./script
+      dockerfile: Dockerfile
+    environment:
+      MYSQL_DATABASE: 'db_script'
+      MYSQL_USER: 'db_script'
+      MYSQL_PASSWORD: 'db_script'
+      MYQSQL_HOSTNAME: 'mysqldb'
+    ports:
+    - "9082:80"
+    volumes:
+    - ./script:/var/www/html
+   
