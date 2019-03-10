@@ -2,4 +2,6 @@
 
 printf "Content-type: text/plain; charset=iso-8859-1\n\n"
 
-printf "Hello world!\n"
+printf "<h1>Hello world!</h1>\n"
+printf "<p>this is generate by the script</p>\n"
+
