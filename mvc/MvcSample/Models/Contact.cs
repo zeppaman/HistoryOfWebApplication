@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MvcSample.DAL
 {
-    [Table("contacts")]
+    [Table("contacts_mvc")]
     public class Contact
     {
         [Key]

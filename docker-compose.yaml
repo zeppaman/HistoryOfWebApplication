@@ -29,4 +29,25 @@ services:
     - "9082:80"
     volumes:
     - ./script:/var/www/html
-   
+  mvc:
+    build: 
+      context: ./mvc
+      dockerfile: Dockerfile
+    environment:
+      CONNECTION_STRING: 'Server=mysqldb; Port=3306; Database=db_script; user=db_script; password=db_script;'
+    ports:
+    - "9083:80"
+  spa-api:
+    build: 
+      context: ./spa/api
+      dockerfile: Dockerfile
+    environment:
+      CONNECTION_STRING: 'Server=mysqldb; Port=3306; Database=db_script; user=db_script; password=db_script;'
+    ports:
+    - "9084:80"
+  spa-fe:
+    build: 
+      context: ./spa/fe
+      dockerfile: Dockerfile
+    ports:
+    - "9085:80"
