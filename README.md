@@ -39,7 +39,7 @@ CGI and Script example are mapped volumes so changes to the files work directly,
 - http://localhost:9082/
   
 ### MVC
-- https://localhost:9084/swagger/index.html
+- https://localhost:9083/
   
 ### SPA
 - API: https://localhost:9084/swagger/index.html
