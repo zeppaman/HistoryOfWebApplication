@@ -1,4 +1,4 @@
-# History Of Web Application, Florence 11/03/2019
+# History Of Web Application
 
 This project is the source code related to the seminary "Evoluzione dei pattern di sviluppo di applicazioni web based" (Evolution of development patterns on web applications).
 
