@@ -75,3 +75,14 @@ You can open these urls (port may vary):
 
 - API https://localhost:44320/swagger/index.html
 - FE  http://localhost:4200
+
+
+## More to read
+
+[Oauth2: GitHub Analytics: Oauth Killer Application](https://www.codeproject.com/Articles/1178156/GitHub-Analytics-Oauth-Killer-Application)
+[Api Gateway: Api Gateway in un esempio pratico](https://www.sintraconsulting.it/api-gateway-definizione-caratteristiche-esempio/)
+[Slack API:Slack Pusher: Push Slack Messages to Wordpress]()
+[NoSQL:NOSQL or NOT NOSQL?](https://www.codeproject.com/Articles/1275260/Slack-Pusher-push-slack-messages-to-Wordpress)
+[Headless CMS: Inside Headless CMS](https://towardsdatascience.com/inside-headless-cms-abf4761f3a8?source=friends_link&sk=34bc5f86a33cc6dc3ddf9c9e8ab2ce5e)
+[TDD+ MVC:Build an ASP.NET Wiki to Explain TDD](https://www.codeproject.com/Articles/1267361/Build-an-Asp-net-wiki-to-explain-TDD)
+[Docker: Simple tutorial to understand docker basics](https://github.com/zeppaman/docker-basics-tutorial)
